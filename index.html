@@ -1,98 +1,213 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agent Ajay Portfolio</title>
+<title>Agent Ajay | Premium Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body {
-  margin: 0;
-  font-family: Arial;
-  background: #0f172a;
-  color: white;
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:Poppins;background:#0f172a;color:white}
+
+/* NAVBAR */
+nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(0,0,0,0.6);
+  backdrop-filter:blur(10px);
+  padding:15px;
+  text-align:center;
+  z-index:1000;
+}
+nav a{color:white;margin:0 15px;text-decoration:none;font-weight:600}
+
+/* HERO */
+header{
+  padding:120px 20px;
+  text-align:center;
+  background:radial-gradient(circle,#1e293b,#000);
+}
+h1{font-size:50px;color:gold;text-shadow:0 0 20px gold}
+.tagline{margin-top:10px;font-size:20px;opacity:.8}
+
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 30px;
+  background:linear-gradient(45deg,gold,orange);
+  color:black;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.btn:hover{transform:scale(1.1);box-shadow:0 0 20px gold}
+
+/* SECTIONS */
+.section{padding:70px 20px;text-align:center}
+
+/* CARDS */
+.cards{display:flex;flex-wrap:wrap;justify-content:center}
+.card{
+  background:rgba(30,41,59,0.7);
+  backdrop-filter:blur(10px);
+  margin:15px;
+  padding:25px;
+  border-radius:15px;
+  width:260px;
+  transition:.4s;
+}
+.card:hover{
+  transform:translateY(-10px) scale(1.05);
+  box-shadow:0 0 20px rgba(255,215,0,.4);
 }
 
-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(135deg, #000, #1e293b);
+/* STATS */
+.stats{display:flex;justify-content:center;flex-wrap:wrap}
+.stat{margin:20px;font-size:30px;color:gold}
+
+/* TESTIMONIAL */
+.testimonial{
+  max-width:500px;
+  margin:auto;
+  font-style:italic;
+  opacity:.9;
 }
 
-h1 {
-  font-size: 40px;
-  color: gold;
+/* FAQ */
+.faq{
+  max-width:600px;
+  margin:auto;
+  text-align:left;
+}
+.faq div{
+  margin:10px 0;
+  padding:15px;
+  background:#1e293b;
+  border-radius:10px;
+  cursor:pointer;
 }
 
-.tagline {
-  font-size: 18px;
-  margin-top: 10px;
+/* FOOTER */
+footer{text-align:center;padding:20px;background:#000;color:#aaa}
+
+/* WHATSAPP */
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  padding:14px 18px;
+  border-radius:50px;
+  color:white;
+  text-decoration:none;
+  animation:pulse 2s infinite;
 }
 
-.btn {
-  margin-top: 20px;
-  padding: 12px 25px;
-  background: gold;
-  color: black;
-  text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
+/* POPUP */
+.popup{
+  position:fixed;
+  bottom:90px;
+  left:20px;
+  background:#1e293b;
+  padding:15px;
+  border-radius:10px;
+  display:none;
 }
 
-.section {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.card {
-  background: #1e293b;
-  margin: 15px auto;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 300px;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #000;
-  color: #aaa;
+/* ANIMATION */
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(37,211,102,.7)}
+  70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}
+  100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Services</a>
+  <a href="#">Contact</a>
+</nav>
+
 <header>
   <h1>AGENT AJAY</h1>
-  <p class="tagline">24/7 Available for Customer Services</p>
-  <a href="https://bit.ly/49GnSmi" class="btn">Contact Now</a>
+  <p class="tagline">Trusted 24/7 Customer Support</p>
+  <a href="https://wa.me/447598147321" class="btn">Start Now</a>
 </header>
 
 <div class="section">
-  <h2>🔥 My Services</h2>
-
-  <div class="card">DEPOSIT AND WITHDRAWL ON TIME👍</div>
-  <div class="card">Customer Support 24/7</div>
-  <div class="card">Sports Updates & Management</div>
-  <div class="card">GAME EXPLAIN AND WITHDRAWL GURENTTEE</div>
+  <h2>🔥 Services</h2>
+  <div class="cards">
+    <div class="card">Instant Deposits & Withdrawals</div>
+    <div class="card">24/7 Support</div>
+    <div class="card">Sports Management</div>
+    <div class="card">Secure Transactions</div>
+  </div>
 </div>
 
 <div class="section">
-  <h2>💼 About Me</h2>
-  <p>I am Agent Ajay providing fast and reliable customer services.  
-  Available 24/7 to handle your queries and manage your systems professionally.</p>
+  <h2>📊 Live Stats</h2>
+  <div class="stats">
+    <div class="stat">5000+ Clients</div>
+    <div class="stat">24/7 Active</div>
+    <div class="stat">100% Fast Service</div>
+  </div>
 </div>
 
 <div class="section">
-  <h2>📞 +447598147321 </h2>
-  <p>Telegram: @Ajaybb7</p>
-  <p>Website: www.betbricks7.co</p>
+  <h2>⭐ Testimonials</h2>
+  <p id="testimonial" class="testimonial">"Very fast withdrawal! Trusted service."</p>
+</div>
+
+<div class="section">
+  <h2>❓ FAQ</h2>
+  <div class="faq">
+    <div onclick="toggle(this)">Is it safe? ✔</div>
+    <div onclick="toggle(this)">How fast withdrawals? ✔</div>
+    <div onclick="toggle(this)">Support available? ✔</div>
+  </div>
 </div>
 
 <footer>
-  © 2026 Agent Ajay | All Rights Reserved
+  © 2026 Agent Ajay
 </footer>
+
+<a href="https://wa.me/447598147321" class="whatsapp">💬</a>
+
+<div id="popup" class="popup">💰 Someone just completed a withdrawal!</div>
+
+<script>
+// TESTIMONIAL ROTATOR
+const texts=[
+"Very fast withdrawal! Trusted service.",
+"Best support I’ve ever used.",
+"Quick response and reliable."
+];
+let i=0;
+setInterval(()=>{
+ i=(i+1)%texts.length;
+ document.getElementById("testimonial").innerText=texts[i];
+},3000);
+
+// FAQ toggle
+function toggle(el){
+  el.style.background="#334155";
+}
+
+// FAKE POPUP
+setInterval(()=>{
+ let p=document.getElementById("popup");
+ p.style.display="block";
+ setTimeout(()=>{p.style.display="none"},3000);
+},6000);
+</script>
 
 </body>
 </html>
+```
